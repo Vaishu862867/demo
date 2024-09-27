@@ -9,12 +9,12 @@ jobs:
      runs-on: ubuntu-latest
 
      steps:
-        -name: chechout code
-         uses: actions/checkout@v4.2.0
+        - name: Checkout
+  uses: actions/checkout@v4.2.0
 
-         -name: setup python
+       - name: setup python
           uses: actions/setup-python@v5.2.0
 
-         -name: run python app
+       - name: run python app
           run: python app.py
   
